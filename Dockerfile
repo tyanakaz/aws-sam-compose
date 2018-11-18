@@ -18,10 +18,6 @@ RUN set -x \
         && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
         && locale-gen && update-locale LANG=en_US.UTF-8
 
-# node setup
-ENV NPM_CONFIG_LOGLEVEL info
-
-# Install react and react-dom
 #ENV AWS_CLI
 #ENV AWS_SAM_CLI
 
